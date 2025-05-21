@@ -23,7 +23,7 @@ if st.session_state.get("auto_agent", False):
 INFLUXDB_URL = st.secrets["INFLUXDB_URL"]
 INFLUXDB_TOKEN = st.secrets["INFLUXDB_TOKEN"]
 INFLUXDB_ORG = st.secrets["INFLUXDB_ORG"]
-INFLUXDB_BUCKET = st.secrets["INFLUXDB_BUCKET", "ESP32"]
+INFLUXDB_BUCKET = st.secrets["INFLUXDB_BUCKET"]
 
 # Sprawdzenie połączenia
 if not all([INFLUXDB_URL, INFLUXDB_TOKEN, INFLUXDB_ORG, INFLUXDB_BUCKET]):
