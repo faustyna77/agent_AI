@@ -1,0 +1,8 @@
+streamlit
+influxdb-client
+python-dotenv
+pandas
+plotly
+streamlit-autorefresh
+langchain
+langchain-openai
