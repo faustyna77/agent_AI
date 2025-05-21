@@ -70,8 +70,9 @@ Dozwolone decyzje: LED_ON, LED_OFF.
             .time(datetime.now(timezone.utc))
 
         write_api.write(bucket=os.getenv("INFLUXDB_BUCKET"), record=point)
-        st.success("✅ Zapisano decyzję:", decision)
-        st.success("📝 Uzasadnienie:", reason)
+        st.success(f"✅ Zapisano decyzję: {decision}")
+        st.success(f"📝 Uzasadnienie: {reason}")
+
     else:
         st.error("⚠️ Nie udało się odczytać decyzji z odpowiedzi.")
 
